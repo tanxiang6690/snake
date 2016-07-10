@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>游戏-贪吃蛇</title>
+	<link rel="stylesheet" href="index.css">
+	<script src="jquery1.12.3.js"></script>
+	<script src="index.js"></script>
+</head>
+<body>
+    <div class="box">
+        <div class="left">
+            <div class="logo"><img src="./image/logo.jpg" alt=""></div>
+            <div class="operate">
+                <div class="start">游戏开始</div>
+                <div class="stop">游戏暂停</div>
+                <div class="refresh">刷新页面</div>
+            </div>
+        </div>
+        <div class="changjing"></div>
+        <div class="right">
+            <div class="gameNum">游戏得分</div>
+            <div class="deFen"><strang>0</strang></div>
+            <div class="selectMode">难易程度</div>
+            <div class="select">
+                <select name="xuanZe" id="selector">
+                    <option value="soEasy" selected="selected">简单</option>
+                    <option value="medium">中等</option>
+                    <option value="hard">较难</option>
+                </select>
+            </div>
+            <div class="gameIntroduce">游戏介绍</div>
+            <div class="jieShaoShu">
+                <p>1，按左边开始按钮游戏开始，按停止按钮游戏暂停，按刷新按钮游戏重新开始。</p>
+                <p>2，如果前进方向已经到边界并且没有及时返回往前继续一步，则会撞墙牺牲。</p>
+                <p>3，如果蛇头撞向自己的身体也会自杀而亡的。</p>
+            </div>
+        </div>
+        <div class="gamestart">
+            <img src="./image/start.jpg" alt="">
+        </div>
+        <div class="gameEnd"></div>
+        <div class="knockSelf"></div>
+    </div>
+</body>
+</html>

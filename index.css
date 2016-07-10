@@ -1,0 +1,195 @@
+    *{
+    	margin: 0;
+    	padding: 0;
+    	list-style: none;
+    	font-family: "微软雅黑";
+    }
+    img{
+    	border: none;
+    }
+    body{
+        background: url(./image/9c384019724245.562dfd328649c.jpg);
+        background-size: cover;
+    }
+    .box{
+        height: 602px;
+        width:1002px;
+        position: relative;
+        left: 0;
+        right: 0;
+        bottom:0;
+        top: 40px;
+        margin: auto;
+    }
+    .left{
+        height: 602px;
+        width: 200px;
+        background:rgba(0,100,100,0.6);
+        float: left;
+        z-index: 100;
+    }
+    .left .logo{
+        height:200px;
+        width:200px;
+        background: red;
+        float: left;
+        z-index: 101;
+        overflow: hidden;
+    }
+    .left .logo img{
+        height:200px;
+        width: 200px;
+        z-index: 500;
+        transition:all 0.5s ease;
+    }
+    .left .logo img:hover{
+        transform: scale(1.2,1.2);
+    }
+    .left .operate{
+        height:200px;
+        width: 200px;
+        float: left;
+        margin-top: 50px;
+    }
+    .left .operate .start, .left .operate .stop, .left .operate .refresh{
+        margin: 10px 10px;
+        padding: 8px 0;
+        background: darkgreen;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        color: #e2e2e2;
+        cursor:pointer;
+        border: 1px solid darkgreen;
+        border-radius: 5px;
+        transition:all 0.5s ease;
+        /*transform: translateY();*/
+    }
+    .left .operate .start:hover,.left .operate .stop:hover,.left .operate .refresh:hover{
+        transform: scale(1.1,1.1);
+        border: 1px solid darkslateblue;
+        font-size: 1.2em;
+    }
+    .right{
+        height: 602px;
+        width: 200px;
+        background:rgba(0,100,100,0.6);
+        float: right;
+    }
+    .right .gameNum, .right .deFen, .right .selectMode, .right .select, .right .gameIntroduce{
+        height: 38px;
+        width: 160px;
+        float: left;
+        margin: 20px 20px;
+        background: darkgreen;
+        color: #e2e2e2;
+        line-height: 38px;
+        text-align: center;
+        border-radius: 5px;
+        transition: all 1s ease;
+    }
+    .right .select #selector{
+        height:38px;
+        width:160px;
+        text-indent: 2em;
+        background: mediumvioletred;
+        outline: none;
+        font-size: 14px;
+        color: #e2e2e2;
+        border-radius: 5px;
+    }
+    .right .gameNum:hover,  .right .selectMode:hover{
+        transform:rotateZ(360deg);
+    }
+    .right .gameIntroduce:hover{
+        transform: scale(1.2,1.2);
+        font-size: 14px;
+    }
+    .right .jieShaoShu{
+        float: left;
+        margin: -16px 0;
+        transition: all 0.7s ease;
+        transform: translateX(-100%);
+        /*opacity: 0;*/
+        display: block;
+    }
+    .right .jieShaoShu p{
+        padding: 0 5px;
+        line-height: 25px;
+        font-size: 10px;
+        color: #DBDBDB;
+        background:rgba(0,100,100,0.6);
+        text-indent: 1.5em;
+    }
+    .changjing{
+		height: 600px;
+		width: 600px;
+		border:1px solid black;
+		background: white;
+        float: left;
+	    position: absolute;
+	    top: 0;
+	    left: 200px;
+	    z-index: 50;
+	}
+	.changjing .block {
+        height: 30px;
+        width: 30px;
+        float: left;
+        background-image: url(./image/caodi.jpg);
+        background-size: cover;
+    }
+	.changjing .snake{
+		background-image:url(./image/bc3262a180de00df8c07d09197352ef377ab464928dfd-5WCT2n_fw658.jpg);
+        background-position:center center;
+		background-size: cover;
+	}
+	.changjing .food{
+		background-image: url(./image/14d1820069292d77a44c7f5a5eabfe29.jpg);
+		background-size: cover;
+	}
+	.gamestart{
+		height: 602px;
+		width: 602px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0px;
+		margin: auto;
+		z-index: 100;
+		display: block;
+	}
+	.gamestart img{
+		height: 602px;
+		width: 602px;
+	}
+	.gameEnd{
+		height: 0px;
+		width: 0px;
+		background:url(./image/end.jpg) no-repeat;
+		background-size: cover;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		margin:auto;
+		z-index: 200;
+        opacity: 0;
+	}
+    .knockSelf{
+        height: 220px;
+        width: 380px;
+        background: url(./image/zhuangDaoZiJi.jpg) no-repeat;
+        position:absolute;
+        left:0;
+        right:0;
+        top: -30px;
+        bottom: 0;
+        margin: auto;
+        /*display: none;*/
+        z-index: 200;
+        transition:all 1.5s ease;
+        transform: translateY(-5000px);
+    }
